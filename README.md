@@ -1,12 +1,12 @@
 # S3APP1 : MenuFact02
 
-Fonctions principales:
+#Fonctions principales:
 - Maintenir à jour les plats
 - Confection des factures
 - Transactions à la caisse
 
 
-Étapes à suivre
+#Étapes à suivre
 - Préparer le nouveau Diagramme de Classes avec Modèles de Conception.
 Note: Suivre les contraintes de l'Annexe A du guide.
 
