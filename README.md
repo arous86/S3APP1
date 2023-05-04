@@ -26,3 +26,6 @@ Note: Questions à répondre à la page 5 du guide.
 - MVC
 - Flyweight
 - 2 autres au choix
+
+# Catalogue des Modèles de Conception
+https://refactoring.guru/design-patterns/catalog
