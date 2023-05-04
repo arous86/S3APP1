@@ -16,3 +16,13 @@ Note: Suivre les contraintes de l'Annexe A du guide.
 
 - Préparer le rapport
 Note: Questions à répondre à la page 5 du guide.
+
+
+# Modèles de Conception à intégrés
+- Singleton
+- Factory
+- Observer
+- State
+- MVC
+- Flyweight
+- 2 autres au choix
