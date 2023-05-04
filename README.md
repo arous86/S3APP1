@@ -1,6 +1,6 @@
 # S3APP1 : MenuFact02
 
-# Fonctions principales:
+# Fonctions principales
 - Maintenir à jour les plats
 - Confection des factures
 - Transactions à la caisse
@@ -37,4 +37,11 @@ qu'une seule instance d'une classe. Par exemple, si on souhaite
 intégrer une base de données à notre programme, il devrait être
 interdit de créer plusieurs instances différentes. Le Singleton
 règle ce problème en limitant la classe à une seule instance.
+
+Factory:
+Ce Modèle est utile pour plusieurs cas de conception. Il peut être
+utilisé lorsqu'on ne connait pas davance le type d'objet avec
+lequel on va travailler. Il permet de créer une librairie ou cadre
+d'objet facilement extensible. Enfin, il permet de réutiliser du
+code déjà existant.
 
