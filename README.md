@@ -46,4 +46,17 @@ d'objet facilement extensible. Enfin, il permet de réutiliser du
 code déjà existant.
 
 Observer:
+Ce Modèle est utile lorsqu'un changement d'état d'un objet doit
+changer celui d'un autre objet, ou les notifier du changement.
+Par exemple, si le programme possède une classe Magazine et une
+classe Lecteur, la classe Magazine peut détenir une liste
+d'abonnées, afin d'envoyer ses revues aux bons clients.
+
+State:
+Il est intéressant d'utiliser ce Modèle dans plusieurs cas.
+D'abord, lorsqu'un objet peut avoir beaucoup d'états possibles.
+Ensuite, lorsqu'une classe possède une grande quantité de
+conditionnels qui rendent le code difficile à maintenir.
+
+MVC:
 
