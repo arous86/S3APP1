@@ -59,4 +59,13 @@ Ensuite, lorsqu'une classe possède une grande quantité de
 conditionnels qui rendent le code difficile à maintenir.
 
 MVC:
+Le Modèle de Conception MVC (Modèle-Vue-Contrôleur) permet de
+séparer le programme en trois parties afin de séparer la logique
+de l'interface. Plus précisément, pour une structure MVC, la
+classe Modèle possède les données, la classe Vue affiche
+l'interface selon les données contenues dans le Modèle et la
+classe Contrôleur met à jour la classe Vue, lorsqu'il y a un
+changement dans la classe Modèle.
+
+Flyweight:
 
