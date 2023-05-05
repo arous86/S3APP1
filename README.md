@@ -45,3 +45,5 @@ lequel on va travailler. Il permet de créer une librairie ou cadre
 d'objet facilement extensible. Enfin, il permet de réutiliser du
 code déjà existant.
 
+Observer:
+
