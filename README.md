@@ -29,6 +29,7 @@ Note: Questions à répondre à la page 5 du guide.
 
 # Catalogue des Modèles de Conception
 https://refactoring.guru/design-patterns/catalog
+https://www.tutorialspoint.com/design_pattern/mvc_pattern.htm
 
 # Description des différents Modèles de Conception
 Singleton:
