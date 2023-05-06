@@ -69,4 +69,12 @@ classe Contrôleur met à jour la classe Vue, lorsqu'il y a un
 changement dans la classe Modèle.
 
 Flyweight:
-
+Le Flyweight est fort utile lorsque notre programme est très
+lourd ET qu'il possède beaucoup d'objet similaire. Par exemple,
+si notre programme possède une tonne d'objet Projectile et que
+chacune de ses instance stocke la même image, le programme
+demande beaucoup de mémoire pour la même image chaque fois.
+Dans ce cas, il devient intéressant de concevoir une classe
+intrisèque qui ne possède que l'image et une classe extrinsèque
+qui hérite de celle-ci et possède tous les autres attributs du
+projectile.
