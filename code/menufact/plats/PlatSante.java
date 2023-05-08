@@ -2,7 +2,7 @@ package menufact.plats;
 
 import menufact.plats.PlatAuMenu;
 
-public class PlatSante extends PlatAuMenu {
+public class PlatSante extends PlatAuMenu implements Cloneable {
     private double kcal;
     private double chol;
     private double gras;
@@ -15,6 +15,16 @@ public class PlatSante extends PlatAuMenu {
     }
 
     public PlatSante() {
+    }
+
+    @Override
+    public PlatSante clone() {
+        PlatSante p = null;
+        try {
+            p = (PlatSante) super.clone();
+        } finally {
+            return p;
+        }
     }
 
     @Override

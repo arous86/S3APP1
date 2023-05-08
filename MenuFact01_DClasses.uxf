@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1602</x>
-      <y>1080</y>
+      <x>1638</x>
+      <y>972</y>
       <w>243</w>
       <h>216</h>
     </coordinates>
@@ -29,8 +29,8 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1512</x>
-      <y>612</y>
+      <x>1548</x>
+      <y>504</y>
       <w>225</w>
       <h>315</h>
     </coordinates>
@@ -62,8 +62,8 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1593</x>
-      <y>477</y>
+      <x>1629</x>
+      <y>369</y>
       <w>135</w>
       <h>81</h>
     </coordinates>
@@ -77,8 +77,8 @@ PAYEE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1656</x>
-      <y>981</y>
+      <x>1692</x>
+      <y>873</y>
       <w>135</w>
       <h>27</h>
     </coordinates>
@@ -90,8 +90,8 @@ PAYEE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1935</x>
-      <y>972</y>
+      <x>1971</x>
+      <y>864</y>
       <w>135</w>
       <h>36</h>
     </coordinates>
@@ -103,8 +103,8 @@ PAYEE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1719</x>
-      <y>972</y>
+      <x>1755</x>
+      <y>864</y>
       <w>306</w>
       <h>54</h>
     </coordinates>
@@ -114,8 +114,8 @@ PAYEE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1656</x>
-      <y>918</y>
+      <x>1692</x>
+      <y>810</y>
       <w>99</w>
       <h>81</h>
     </coordinates>
@@ -126,10 +126,10 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1107</x>
-      <y>684</y>
+      <x>1116</x>
+      <y>558</y>
       <w>243</w>
-      <h>207</h>
+      <h>369</h>
     </coordinates>
     <panel_attributes>PlatAuMenu
 --
@@ -146,14 +146,25 @@ lt=&lt;.</panel_attributes>
 +getPrix():double
 +setPrix(double):void
 +toString():String
-bg=BLUE</panel_attributes>
++clone():PlatAuMenu
++setQty_epice(double):void
++getQty_epice():double
++setQty_fruit(double):void
++getQty_fruit():double
++setQty_viande(double):void
++getQty_viande():double
++setQty_laitier(double):void
++getQty_laitier():double
++setQty_legume(double):void
++getQty_legume():double
+bg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1728</x>
-      <y>414</y>
+      <x>1764</x>
+      <y>306</y>
       <w>324</w>
       <h>288</h>
     </coordinates>
@@ -163,8 +174,8 @@ bg=BLUE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1611</x>
-      <y>549</y>
+      <x>1647</x>
+      <y>441</y>
       <w>63</w>
       <h>81</h>
     </coordinates>
@@ -174,8 +185,8 @@ bg=BLUE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1935</x>
-      <y>1098</y>
+      <x>1971</x>
+      <y>990</y>
       <w>135</w>
       <h>45</h>
     </coordinates>
@@ -187,8 +198,8 @@ bg=BLUE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1998</x>
-      <y>999</y>
+      <x>2034</x>
+      <y>891</y>
       <w>27</w>
       <h>117</h>
     </coordinates>
@@ -198,8 +209,8 @@ bg=BLUE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1836</x>
-      <y>1134</y>
+      <x>1872</x>
+      <y>1026</y>
       <w>189</w>
       <h>72</h>
     </coordinates>
@@ -210,8 +221,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1611</x>
-      <y>918</y>
+      <x>1647</x>
+      <y>810</y>
       <w>54</w>
       <h>180</h>
     </coordinates>
@@ -221,8 +232,8 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1908</x>
-      <y>225</y>
+      <x>1944</x>
+      <y>117</y>
       <w>243</w>
       <h>198</h>
     </coordinates>
@@ -245,10 +256,10 @@ lt=&lt;.</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1215</x>
-      <y>963</y>
+      <x>1242</x>
+      <y>972</y>
       <w>243</w>
-      <h>207</h>
+      <h>225</h>
     </coordinates>
     <panel_attributes>PlatSante
 --
@@ -265,25 +276,26 @@ lt=&lt;.</panel_attributes>
 +getGras():double
 +setGras(double):void
 +toString():String
-bg=BLUE</panel_attributes>
++clone():PlatSante
+bg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1206</x>
-      <y>882</y>
-      <w>135</w>
-      <h>99</h>
+      <x>1215</x>
+      <y>918</y>
+      <w>153</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;130.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;150.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1098</x>
-      <y>495</y>
+      <x>1134</x>
+      <y>387</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -303,19 +315,19 @@ bg=RED</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1188</x>
-      <y>621</y>
-      <w>63</w>
-      <h>81</h>
+      <x>1224</x>
+      <y>513</y>
+      <w>36</w>
+      <h>63</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>50.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>20.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1332</x>
-      <y>567</y>
+      <x>1368</x>
+      <y>459</y>
       <w>198</w>
       <h>162</h>
     </coordinates>
@@ -325,8 +337,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1872</x>
-      <y>684</y>
+      <x>1908</x>
+      <y>576</y>
       <w>243</w>
       <h>81</h>
     </coordinates>
@@ -340,8 +352,8 @@ bg=RED</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1728</x>
-      <y>720</y>
+      <x>1764</x>
+      <y>612</y>
       <w>162</w>
       <h>135</h>
     </coordinates>
@@ -351,21 +363,21 @@ bg=RED</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1341</x>
-      <y>792</y>
-      <w>279</w>
-      <h>378</h>
+      <x>1350</x>
+      <y>666</y>
+      <w>306</w>
+      <h>396</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
-    <additional_attributes>10.0;10.0;290.0;400.0</additional_attributes>
+    <additional_attributes>10.0;10.0;320.0;420.0</additional_attributes>
   </element>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>936</x>
-      <y>423</y>
+      <x>972</x>
+      <y>315</y>
       <w>531</w>
-      <h>765</h>
+      <h>909</h>
     </coordinates>
     <panel_attributes>Plats</panel_attributes>
     <additional_attributes/>
@@ -373,8 +385,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1494</x>
-      <y>441</y>
+      <x>1530</x>
+      <y>333</y>
       <w>297</w>
       <h>576</h>
     </coordinates>
@@ -384,8 +396,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>1575</x>
-      <y>1035</y>
+      <x>1611</x>
+      <y>927</y>
       <w>1035</w>
       <h>729</h>
     </coordinates>
@@ -395,8 +407,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>945</x>
-      <y>963</y>
+      <x>990</x>
+      <y>1026</y>
       <w>243</w>
       <h>162</h>
     </coordinates>
@@ -408,25 +420,26 @@ bg=RED</panel_attributes>
 +PlatEnfant(int,String,double,double)
 +getProportion():double
 +toString():String
-bg=BLUE</panel_attributes>
++clone():PlatEnfant
+bg=BLACK</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1071</x>
-      <y>882</y>
-      <w>153</w>
-      <h>99</h>
+      <x>1116</x>
+      <y>918</y>
+      <w>117</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>110.0;10.0;10.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2151</x>
-      <y>783</y>
+      <x>2187</x>
+      <y>675</y>
       <w>189</w>
       <h>171</h>
     </coordinates>
@@ -442,8 +455,8 @@ bg=YELLOW</panel_attributes>
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>108</x>
-      <y>423</y>
+      <x>153</x>
+      <y>342</y>
       <w>801</w>
       <h>765</h>
     </coordinates>
@@ -453,186 +466,159 @@ bg=YELLOW</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>432</x>
-      <y>963</y>
+      <x>522</x>
+      <y>873</y>
       <w>243</w>
       <h>207</h>
     </coordinates>
     <panel_attributes>Laitier
 --
--code:int
+-nom:String
 -description:String
--prix:double
+-typeIngredient:TypeIngredient
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>621</x>
-      <y>918</y>
+      <x>693</x>
+      <y>630</y>
       <w>243</w>
       <h>207</h>
     </coordinates>
     <panel_attributes>Epice
 --
--code:int
+-nom:String
 -description:String
--prix:double
+-typeIngredient:TypeIngredient
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>207</x>
-      <y>918</y>
+      <x>243</x>
+      <y>846</y>
       <w>243</w>
       <h>207</h>
     </coordinates>
     <panel_attributes>Viande
 --
--code:int
+-nom:String
 -description:String
--prix:double
+-typeIngredient:TypeIngredient
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>135</x>
-      <y>729</y>
+      <x>171</x>
+      <y>621</y>
       <w>243</w>
       <h>207</h>
     </coordinates>
     <panel_attributes>Legumes
 --
--code:int
+-nom:String
 -description:String
--prix:double
+-typeIngredient:TypeIngredient
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>153</x>
-      <y>504</y>
+      <x>189</x>
+      <y>396</y>
       <w>243</w>
       <h>207</h>
     </coordinates>
     <panel_attributes>Fruits
 --
--code:int
+-nom:String
 -description:String
--prix:double
+-typeIngredient:TypeIngredient
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
-      <y>504</y>
+      <x>576</x>
+      <y>396</y>
       <w>243</w>
-      <h>207</h>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Ingredients
 --
--code:int
--description:String
--prix:double
 --
-+PlatAuMenu()
-+PlatAuMenu(int,String,double)
-+getCode():int
-+setCode(int):void
++getNom():String
++setNom(String):void
 +getDescription():String
 +setDescription(String):void
-+getPrix():double
-+setPrix(double):void
-+toString():String
++getTypeIngredient():TypeIngredient
 bg=BLUE</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>261</x>
-      <y>495</y>
-      <w>324</w>
-      <h>234</h>
+      <x>297</x>
+      <y>387</y>
+      <w>360</w>
+      <h>171</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>340.0;240.0;10.0;10.0</additional_attributes>
+    <additional_attributes>380.0;170.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>702</y>
-      <w>252</w>
-      <h>234</h>
+      <x>414</x>
+      <y>531</y>
+      <w>288</w>
+      <h>333</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>260.0;10.0;10.0;240.0</additional_attributes>
+    <additional_attributes>300.0;10.0;10.0;350.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>972</x>
-      <y>243</y>
+      <x>1008</x>
+      <y>135</y>
       <w>189</w>
       <h>270</h>
     </coordinates>
@@ -643,30 +629,30 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>639</x>
-      <y>702</y>
+      <x>711</x>
+      <y>531</y>
       <w>126</w>
-      <h>234</h>
+      <h>117</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;240.0</additional_attributes>
+    <additional_attributes>10.0;10.0;120.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>243</x>
-      <y>702</y>
-      <w>360</w>
-      <h>45</h>
+      <x>279</x>
+      <y>531</y>
+      <w>396</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>380.0;10.0;10.0;30.0</additional_attributes>
+    <additional_attributes>420.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1728</x>
-      <y>756</y>
+      <x>1764</x>
+      <y>648</y>
       <w>441</w>
       <h>135</h>
     </coordinates>
@@ -680,8 +666,8 @@ bg=GREEN
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1071</x>
-      <y>117</y>
+      <x>1107</x>
+      <y>9</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -701,8 +687,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1332</x>
-      <y>153</y>
+      <x>1368</x>
+      <y>45</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -722,8 +708,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1593</x>
-      <y>189</y>
+      <x>1629</x>
+      <y>81</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -743,8 +729,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>819</x>
-      <y>117</y>
+      <x>855</x>
+      <y>9</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -764,8 +750,8 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>567</x>
-      <y>153</y>
+      <x>603</x>
+      <y>45</y>
       <w>243</w>
       <h>135</h>
     </coordinates>
@@ -785,8 +771,8 @@ bg=RED</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>702</x>
-      <y>279</y>
+      <x>738</x>
+      <y>171</y>
       <w>414</w>
       <h>288</h>
     </coordinates>
@@ -797,8 +783,8 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1206</x>
-      <y>243</y>
+      <x>1242</x>
+      <y>135</y>
       <w>36</w>
       <h>270</h>
     </coordinates>
@@ -809,8 +795,8 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1296</x>
-      <y>279</y>
+      <x>1332</x>
+      <y>171</y>
       <w>198</w>
       <h>234</h>
     </coordinates>
@@ -821,8 +807,8 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1332</x>
-      <y>315</y>
+      <x>1368</x>
+      <y>207</y>
       <w>351</w>
       <h>243</h>
     </coordinates>
@@ -833,8 +819,8 @@ bg=MAGENTA</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1944</x>
-      <y>1377</y>
+      <x>1980</x>
+      <y>1269</y>
       <w>243</w>
       <h>198</h>
     </coordinates>
@@ -849,8 +835,8 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1611</x>
-      <y>1368</y>
+      <x>1647</x>
+      <y>1260</y>
       <w>243</w>
       <h>198</h>
     </coordinates>
@@ -874,8 +860,8 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1710</x>
-      <y>1287</y>
+      <x>1746</x>
+      <y>1179</y>
       <w>36</w>
       <h>99</h>
     </coordinates>
@@ -885,12 +871,23 @@ bg=ORANGE</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1836</x>
-      <y>1233</y>
+      <x>1872</x>
+      <y>1125</y>
       <w>225</w>
       <h>162</h>
     </coordinates>
     <panel_attributes>lt=&lt;.</panel_attributes>
     <additional_attributes>230.0;160.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>531</y>
+      <w>90</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>80.0;10.0;10.0;380.0</additional_attributes>
   </element>
 </diagram>

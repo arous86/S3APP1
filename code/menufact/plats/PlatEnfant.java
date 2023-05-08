@@ -1,6 +1,6 @@
 package menufact.plats;
 
-public class PlatEnfant extends PlatAuMenu{
+public class PlatEnfant extends PlatAuMenu implements Cloneable{
     private double proportion;
 
     public PlatEnfant() {
@@ -9,6 +9,16 @@ public class PlatEnfant extends PlatAuMenu{
     public PlatEnfant(int code, String description, double prix, double proportion) {
         super(code, description, prix);
         this.proportion = proportion;
+    }
+
+    @Override
+    public PlatEnfant clone() {
+        PlatEnfant p = null;
+        try {
+            p = (PlatEnfant) super.clone();
+        } finally {
+            return p;
+        }
     }
 
     public double getProportion() {
