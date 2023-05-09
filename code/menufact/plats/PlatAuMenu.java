@@ -8,11 +8,31 @@ public class PlatAuMenu implements Cloneable {
     private int code;
     private String description;
     private double prix;
-    private double qty_epice;
-    private double qty_fruit;
-    private double qty_viande;
-    private double qty_laitier;
-    private double qty_legume;
+    private ArrayList<Ingredient> lesIngredients = new ArrayList<Ingredient>();
+
+    public void ajouterIngredient(Ingredient ingredient)
+    {
+        for (Ingredient i : lesIngredients)
+        {
+            if (i.getTypeIngredient().equals(ingredient.getTypeIngredient()))
+            {
+                i.setQty(i.getQty()+ingredient.getQty());
+                return;
+            }
+        }
+        lesIngredients.add(ingredient);
+    }
+    public void ajouterIngredientList (ArrayList<Ingredient> ingredients)
+    {
+        for (Ingredient ingredient : ingredients) {
+            ajouterIngredient(ingredient);
+        }
+    }
+
+    public ArrayList<Ingredient> getLesIngredients() {
+        return lesIngredients;
+    }
+
 
     @Override
     public PlatAuMenu clone() {
@@ -28,11 +48,6 @@ public class PlatAuMenu implements Cloneable {
         this.code = code;
         this.description = description;
         this.prix = prix;
-        qty_epice = 0;
-        qty_fruit = 0;
-        qty_viande = 0;
-        qty_laitier = 0;
-        qty_legume = 0;
     }
 
     public PlatAuMenu() {
@@ -73,35 +88,5 @@ public class PlatAuMenu implements Cloneable {
         this.prix = prix;
     }
 
-    public double getQty_epice() {
-        return qty_epice;
-    }
-    public void setQty_epice(double qty_epice) {
-        this.qty_epice = qty_epice;
-    }
-    public double getQty_fruit() {
-        return qty_fruit;
-    }
-    public void setQty_fruit(double qty_fruit) {
-        this.qty_fruit = qty_fruit;
-    }
-    public double getQty_viande() {
-        return qty_viande;
-    }
-    public void setQty_viande(double qty_viande) {
-        this.qty_viande = qty_viande;
-    }
-    public double getQty_laitier() {
-        return qty_laitier;
-    }
-    public void setQty_laitier(double qty_laitier) {
-        this.qty_laitier = qty_laitier;
-    }
-    public double getQty_legume() {
-        return qty_legume;
-    }
-    public void setQty_legume(double qty_legume) {
-        this.qty_legume = qty_legume;
-    }
 
 }

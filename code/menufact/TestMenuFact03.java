@@ -15,58 +15,91 @@ import java.util.ArrayList;
 public class TestMenuFact03 {
     public static void main(String[] args) {
         boolean trace = true;
-try {
-
-
+        try {
         TestMenuFact03 t = new TestMenuFact03();
 
+        System.out.println("Test creation d'un plat au menu--------------------");
+        ArrayList ingredients = new ArrayList<Ingredient>();
+        ingredients.add(new Epice(1));
+        ingredients.add(new Fruit(2));
+        ingredients.add(new Laitier(3));
+        ingredients.add(new Legume(4));
+        ingredients.add(new Viande(5));
         PlatAuMenu p1 = new PlatAuMenu(0, "PlatAuMenu0", 10);
-        p1.setQty_epice(1);
-        p1.setQty_fruit(2);
-        p1.setQty_viande(3);
-        p1.setQty_laitier(4);
-        p1.setQty_legume(5);
-        PlatAuMenu pcpy = p1.clone();
-        System.out.println("Clone de PlatAuMenu");
-        System.out.println(p1);
-        System.out.println(pcpy);
+        p1.ajouterIngredientList(ingredients);
 
+        System.out.println("Clone d'un plat au menu");
+        PlatAuMenu pcpy = p1.clone();
+        System.out.println("Plat original" + p1);
+        System.out.println("Plat copie" + pcpy);
+
+        System.out.println("Test creation d'un plat sante");
         PlatSante ps1 = new PlatSante(10, "PlatSante0", 10, 11, 11, 11);
         PlatSante pscpy = ps1.clone();
-        System.out.println("Clone de PlatSante");
         System.out.println(ps1);
-        System.out.println(pscpy);
 
+        System.out.println("Test creation d'un plat enfant");
         PlatEnfant pe1 = new PlatEnfant(20, "PlatEnfant0", 10, 0.5);
         PlatEnfant pecpy = pe1.clone();
-        System.out.println("Clone de PlatEnfant");
         System.out.println(pe1);
-        System.out.println(pecpy);
 
-        System.out.println("Test de l'Inventaire");
-        Inventaire inventaire = new Inventaire();
-        Epice epice = new Epice(30);
-        Fruit fruit = new Fruit(40);
-        Laitier laitier = new Laitier(50);
-        Legume legume = new Legume(60);
-        Viande viande = new Viande(70);
-        ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
-        ingredients.add(epice);
-        ingredients.add(fruit);
-        ingredients.add(laitier);
-        ingredients.add(legume);
-        //ingredients.add(viande);
-        inventaire.ajouterList(ingredients);
-        Epice ep1 = new Epice(31);
-        inventaire.retirer(ep1);
-        inventaire.retirer(viande);
+        System.out.println("Test de l'Inventaire--------------------");
+        Inventaire inventaire = Inventaire.getInstance();
+        ArrayList<Ingredient> ingredients1 = new ArrayList<Ingredient>();
+        ingredients1.add(new Epice(30));
+        ingredients1.add(new Fruit(40));
+        ingredients1.add(new Laitier(50));
+        ingredients1.add(new Legume(60));
+        ingredients1.add(new Viande(70));
+        inventaire.ajouterList(ingredients1);
+
+        System.out.println("Test reussite");
+        inventaire.retirer(new Epice(10));
+        inventaire.show();
+        System.out.println("Test echec");
+        inventaire.retirer(new Viande(100));
         inventaire.show();
 
+        System.out.println("Test de la Facture--------------------");
         Facture f1 = new Facture("Ma Facture");
         f1.associerClient(new Client(1, "Domingo", "1234567890"));
-        PlatChoisi pc1 = new PlatChoisi(p1, 1);
+        PlatAuMenu p2 = new PlatAuMenu(1, "PlatAuMenu1", 10);
+        p2.ajouterIngredient(new Epice(15));
+        p2.ajouterIngredient(new Fruit(30));
+        p2.ajouterIngredient(new Laitier(30));
+        p2.ajouterIngredient(new Legume(40));
+        p2.ajouterIngredient(new Viande(40));
 
+        Inventaire inventaire1 = Inventaire.getInstance();
+        inventaire1.ajouter(new Epice(100));
+        inventaire1.ajouter(new Fruit(100));
+        inventaire1.ajouter(new Laitier(100));
+        inventaire1.ajouter(new Legume(100));
+        inventaire1.ajouter(new Viande(100));
+        PlatChoisi pc1 = new PlatChoisi(p2, 2);
+
+        System.out.println("Test reussite");
         f1.ajoutePlat(pc1);
+
+        System.out.println("Test echec");
+        PlatChoisi pc2 = new PlatChoisi(p2, 1);
+        f1.ajoutePlat(pc2);
+
+        System.out.println("Test payment de la Facture--------------------");
+        f1.payer();
+        System.out.println(pc1.getEtat());
+        System.out.println(pc2.getEtat());
+
+        Menu menu = new Menu("Menu 1");
+        menu.ajoute(p1);
+        menu.ajoute(ps1);
+        menu.ajoute(pe1);
+        menu.position(0);
+        menu.afficher();
+
+        f1.afficher();
+        //System.out.println(f1.genererFacture());
+
 
 
 } catch (FactureException e) {
