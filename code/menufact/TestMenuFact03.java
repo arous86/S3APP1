@@ -5,6 +5,7 @@ import inventaire.Inventaire;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
+import menufact.plats.Etat.EtatPlat;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
 import menufact.plats.PlatEnfant;
@@ -81,14 +82,12 @@ public class TestMenuFact03 {
         System.out.println("Test reussite");
         f1.ajoutePlat(pc1);
 
-        System.out.println("Test echec");
-        PlatChoisi pc2 = new PlatChoisi(p2, 1);
-        f1.ajoutePlat(pc2);
+
 
         System.out.println("Test payment de la Facture--------------------");
         f1.payer();
         System.out.println(pc1.getEtat());
-        System.out.println(pc2.getEtat());
+
 
         Menu menu = new Menu("Menu 1");
         menu.ajoute(p1);

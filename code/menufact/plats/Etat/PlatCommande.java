@@ -21,4 +21,7 @@ public class PlatCommande implements EtatPlat{
             System.out.println("Erreur: Plat commande");
         }
     }
+
+
 }
+

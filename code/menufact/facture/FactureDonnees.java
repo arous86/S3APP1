@@ -7,6 +7,7 @@ import menufact.plats.Etat.EtatsPlatEnum;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 public class FactureDonnees {
@@ -181,5 +182,13 @@ public class FactureDonnees {
         factureGenere += "          Le total est de:   " + total() + "\n";
 
         return factureGenere;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public ArrayList<PlatChoisi> getPlats() {
+        return platchoisi;
     }
 }

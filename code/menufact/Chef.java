@@ -2,7 +2,6 @@ package menufact;
 
 import menufact.plats.Etat.EtatsPlatEnum;
 
-// Singleton
 public class Chef {
     private static Chef instance = null;
     private Chef() {

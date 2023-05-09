@@ -98,5 +98,9 @@ public class Inventaire {
             System.out.println(ingredient.getQty());
         }
     }
+    public ArrayList<Ingredient> get()
+    {
+        return lesIngredients;
+    }
 
 }

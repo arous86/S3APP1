@@ -9,6 +9,7 @@ import menufact.plats.Etat.PlatServi;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -117,5 +118,13 @@ public class Facture {
     public void afficher()
     {
         affichage.afficherFacture(donnees);
+    }
+
+    public Client getClient() {
+        return donnees.getClient();
+    }
+
+    public ArrayList<PlatChoisi> getPlats() {
+        return donnees.getPlats();
     }
 }
