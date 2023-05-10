@@ -9,11 +9,11 @@ public class PlatPreparation implements EtatPlat{
         System.out.println("Erreur: Plat en preparation");
     }
     @Override
-    public void setEtat(PlatChoisi plat, EtatsPlatEnum etat) {
-        if (etat == EtatsPlatEnum.TERMINE){
+    public void setEtat(PlatChoisi plat, EtatPlat etat) {
+        if (etat instanceof PlatTermine){
             plat.changeEtat(new PlatTermine());
         }
-        else if(etat == EtatsPlatEnum.INDISPONIBLE)
+        else if(etat instanceof PlatIndisponible)
         {
             plat.changeEtat(new PlatIndisponible());
         }

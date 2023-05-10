@@ -9,7 +9,7 @@ public class FactureAffichage {
     public void afficherFacture(FactureDonnees donnees) {
         try {
             PrintWriter writer = new PrintWriter("Facture.txt", "UTF-8");
-            writer.println(donnees.toString());
+            writer.println(donnees.genererFacture());
             writer.close();
         } catch (IOException e) {
             e.printStackTrace();

@@ -1,15 +1,10 @@
 package menufact.facture;
 
-import menufact.Chef;
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
-import menufact.plats.Etat.EtatPlat;
-import menufact.plats.Etat.EtatsPlatEnum;
-import menufact.plats.Etat.PlatServi;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 
 /**
@@ -86,6 +81,11 @@ public class Facture {
     public Facture(String description) {
         donnees = new FactureDonnees(description);
         affichage = new FactureAffichage();
+    }
+    // get date
+    public Date getDate()
+    {
+        return donnees.getDate();
     }
 
     /**

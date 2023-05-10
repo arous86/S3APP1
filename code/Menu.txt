@@ -1,5 +1,7 @@
-menufact.Menu{description='Menu 1', courant=0, plat=
-[menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
-, menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
-, PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=20, description='PlatEnfant0', prix=10.0}
-]}
+menufact.plats.PlatAuMenu{code=0, description='PlatAuMenu0', prix=10.0}
+
+menufact.plats.PlatSante{kcal=11.0, chol=11.0, gras=11.0} menufact.plats.PlatAuMenu{code=10, description='PlatSante0', prix=10.0}
+
+PlatEnfant{proportion=0.5} menufact.plats.PlatAuMenu{code=20, description='PlatEnfant0', prix=10.0}
+
+

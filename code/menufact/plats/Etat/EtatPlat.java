@@ -4,5 +4,5 @@ import menufact.plats.PlatChoisi;
 
 public interface EtatPlat {
     void setQuantite(PlatChoisi plat, int quantite);
-    void setEtat(PlatChoisi plat, EtatsPlatEnum etat);
+    void setEtat(PlatChoisi plat, EtatPlat etat);
 }

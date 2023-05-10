@@ -8,8 +8,8 @@ public class PlatTermine implements EtatPlat{
         System.out.println("Erreur: Plat termine");
     }
     @Override
-    public void setEtat(PlatChoisi plat, EtatsPlatEnum etat) {
-        if (etat == EtatsPlatEnum.SERVI){
+    public void setEtat(PlatChoisi plat, EtatPlat etat) {
+        if (etat instanceof PlatServi){
             plat.changeEtat(new PlatServi());
         }
         else{

@@ -3,11 +3,10 @@ package menufact.facture;
 import menufact.Chef;
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
-import menufact.plats.Etat.EtatsPlatEnum;
+import menufact.plats.Etat.PlatServi;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Date;
 
 public class FactureDonnees {
@@ -76,7 +75,7 @@ public class FactureDonnees {
         etat = FactureEtat.PAYEE;
         // changer les platchoisi a servi
         for (PlatChoisi p : platchoisi)
-            p.setEtat(EtatsPlatEnum.SERVI);
+            p.setEtat(new PlatServi());
     }
     /**
      * Permet de chager l'état de la facture à FERMEE
@@ -190,5 +189,9 @@ public class FactureDonnees {
 
     public ArrayList<PlatChoisi> getPlats() {
         return platchoisi;
+    }
+
+    public Date getDate() {
+        return date;
     }
 }

@@ -1,2 +1,11 @@
-menufact.facture.Facture{date=Tue May 09 15:30:40 EDT 2023, description='Ma Facture', etat=PAYEE, platchoisi=[menufact.plats.PlatChoisi{quantite=2, plat=menufact.plats.PlatAuMenu{code=1, description='PlatAuMenu1', prix=10.0}
-}], courant=-1, client=menufact.Client{idClient=1, nom='Domingo', numeroCarteCredit='1234567890'}, TPS=0.05, TVQ=0.095}
+Facture generee.
+Date:Tue May 09 23:16:53 EDT 2023
+Description: Ma Facture
+Client:Domingo
+Les plats commandes:
+Seq   Plat         Prix   Quantite
+1     PlatAuMenu1  10.0      2
+          TPS:               1.0
+          TVQ:               1.995
+          Le total est de:   22.995
+

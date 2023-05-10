@@ -61,8 +61,4 @@ class InventaireTest {
         assertEquals(100, inventaireTest.get().get(0).getQty());
         assertEquals(10, inventaireTest.get().get(1).getQty());
     }
-
-    @Test
-    void show() {
-    }
 }

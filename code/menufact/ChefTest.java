@@ -1,12 +1,7 @@
 package menufact;
-import inventaire.Inventaire;
-import menufact.plats.Etat.EtatPlat;
-import menufact.plats.Etat.EtatsPlatEnum;
-import menufact.plats.Etat.PlatIndisponible;
 import menufact.plats.Etat.PlatTermine;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
-import menufact.plats.PlatSante;
 
 import static org.junit.jupiter.api.Assertions.*;
 

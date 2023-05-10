@@ -8,12 +8,12 @@ public class PlatCommande implements EtatPlat{
         plat.setQuantite(quantite);
     }
     @Override
-    public void setEtat(PlatChoisi plat, EtatsPlatEnum etat) {
+    public void setEtat(PlatChoisi plat, EtatPlat etat) {
 
-        if (etat == EtatsPlatEnum.PREPARATION){
+        if (etat instanceof PlatPreparation){
             plat.changeEtat(new PlatPreparation());
         }
-        else if(etat == EtatsPlatEnum.INDISPONIBLE)
+        else if(etat instanceof PlatIndisponible)
         {
             plat.changeEtat(new PlatIndisponible());
         }

@@ -17,6 +17,7 @@ public class TestMenuFact03 {
     public static void main(String[] args) {
         boolean trace = true;
         try {
+        System.out.println("Scenario de test------------------------------------");
         TestMenuFact03 t = new TestMenuFact03();
 
         System.out.println("Test creation d'un plat au menu--------------------");
@@ -56,10 +57,8 @@ public class TestMenuFact03 {
 
         System.out.println("Test reussite");
         inventaire.retirer(new Epice(10));
-        inventaire.show();
         System.out.println("Test echec");
         inventaire.retirer(new Viande(100));
-        inventaire.show();
 
         System.out.println("Test de la Facture--------------------");
         Facture f1 = new Facture("Ma Facture");

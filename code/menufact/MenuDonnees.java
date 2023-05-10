@@ -13,6 +13,12 @@ public class MenuDonnees {
         this.description = description;
     }
 
+    public String genererMenu(){
+        String menu = "";
+        for (PlatAuMenu p : plat)
+            menu += p.toString() + "\n";
+        return menu;
+    }
     void ajoute (PlatAuMenu p)
     {
         plat.add(p);

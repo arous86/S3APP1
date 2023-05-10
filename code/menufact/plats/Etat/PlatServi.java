@@ -8,7 +8,7 @@ public class PlatServi implements EtatPlat{
         System.out.println("Erreur: Plat servi");
     }
     @Override
-    public void setEtat(PlatChoisi plat, EtatsPlatEnum etat) {
+    public void setEtat(PlatChoisi plat, EtatPlat etat) {
         System.out.println("Erreur: Plat servi");
     }
 }

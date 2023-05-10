@@ -2,10 +2,7 @@ package menufact.plats;
 
 import inventaire.Inventaire;
 import menufact.plats.Etat.EtatPlat;
-import menufact.plats.Etat.EtatsPlatEnum;
 import menufact.plats.Etat.PlatCommande;
-import menufact.plats.Etat.PlatPreparation;
-import menufact.plats.PlatAuMenu;
 
 public class PlatChoisi {
     private PlatAuMenu plat;
@@ -23,7 +20,7 @@ public class PlatChoisi {
     public boolean verifierInventaire(int qty){
         return inventaire.retirerList(plat.getLesIngredients(), qty);
     }
-    public void setEtat(EtatsPlatEnum etat) {
+    public void setEtat(EtatPlat etat) {
         etatPlat.setEtat(this, etat);
     }
     public void changeEtat(EtatPlat etat){

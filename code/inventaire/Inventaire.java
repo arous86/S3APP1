@@ -90,14 +90,6 @@ public class Inventaire {
         }
     }
 
-    public void show()
-    {
-        for (Ingredient ingredient : lesIngredients)
-        {
-            System.out.println(ingredient.getTypeIngredient());
-            System.out.println(ingredient.getQty());
-        }
-    }
     public ArrayList<Ingredient> get()
     {
         return lesIngredients;

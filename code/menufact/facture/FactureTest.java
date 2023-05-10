@@ -109,6 +109,7 @@ class FactureTest {
         assertEquals(1, facture.getPlats().size());
     }
 
+
     @Test
     void testToString() {
         Facture facture = new Facture("Facture 1");
@@ -118,11 +119,23 @@ class FactureTest {
         } catch (FactureException e) {
             throw new RuntimeException(e);
         }
-        assertEquals("Facture{nom='Facture 1', client=null, etat=OUVERTE, plats=[PlatChoisi{plat=PlatAuMenu{code=1, description='Poutine', prix=10.0}, quantite=1}]}", facture.toString());
+
+        assertEquals("menufact.facture.Facture{date=" + facture.getDate() +
+                ", description='Facture 1', etat=OUVERTE, platchoisi=[menufact.plats.PlatChoisi{quantite=1, plat=menufact.plats.PlatAuMenu{code=1, description='Poutine', prix=10.0}\n" +
+                "}], courant=-1, client=null, TPS=0.05, TVQ=0.095}", facture.toString());
     }
 
     @Test
     void genererFacture() {
+        Facture facture = new Facture("Facture 1");
+        PlatChoisi platChoisi = new PlatChoisi(new PlatAuMenu(1, "Poutine", 10.0), 1);
+        facture.associerClient(new Client(1, "Domingo", "12345678"));
+        try {
+            facture.ajoutePlat(platChoisi);
+            facture.genererFacture();
+        } catch (FactureException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

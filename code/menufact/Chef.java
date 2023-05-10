@@ -1,6 +1,8 @@
 package menufact;
 
-import menufact.plats.Etat.EtatsPlatEnum;
+import menufact.plats.Etat.PlatIndisponible;
+import menufact.plats.Etat.PlatPreparation;
+import menufact.plats.Etat.PlatTermine;
 
 public class Chef {
     private static Chef instance = null;
@@ -20,15 +22,15 @@ public class Chef {
         {
             System.out.println("Chef: Le plat " + platChoisi.getPlat().getDescription() + " est disponible");
             System.out.println("Chef: Le plat " + platChoisi.getPlat().getDescription() + " est en preparation");
-            platChoisi.setEtat(EtatsPlatEnum.PREPARATION);
+            platChoisi.setEtat(new PlatPreparation());
 
             System.out.println("Chef: Le plat " + platChoisi.getPlat().getDescription() + " est termine");
-            platChoisi.setEtat(EtatsPlatEnum.TERMINE);
+            platChoisi.setEtat(new PlatTermine());
         }
         else
         {
             System.out.println("Chef: Le plat " + platChoisi.getPlat().getDescription() + " est indisponible");
-            platChoisi.setEtat(EtatsPlatEnum.INDISPONIBLE);
+            platChoisi.setEtat(new PlatIndisponible());
         }
     }
 }
